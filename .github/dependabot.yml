@@ -1,0 +1,43 @@
+version: 2
+updates:
+  # Java (Maven)
+  - package-ecosystem: "maven"
+    directory: "/sample-apps/blank-java" # Location of the pom.xml file
+    schedule:
+      interval: "weekly" # Check for updates weekly
+
+  # Java (Maven)
+  - package-ecosystem: "maven"
+    directory: "/sample-apps/java-basic" # Location of the pom.xml file
+    schedule:
+      interval: "weekly" # Check for updates weekly
+
+  # Java (Maven)
+  - package-ecosystem: "maven"
+    directory: "/sample-apps/java-events" # Location of the pom.xml file
+    schedule:
+      interval: "weekly" # Check for updates weekly
+      
+  # JavaScript (npm)
+  - package-ecosystem: "npm"
+    directory: "/" # Location of the package.json file
+    schedule:
+      interval: "weekly" # Check for updates weekly
+
+  # C# (NuGet)
+  - package-ecosystem: "nuget"
+    directory: "/sample-apps/blank-csharp" # Location of the .csproj or packages.config file
+    schedule:
+      interval: "weekly" # Check for updates weekly
+
+  # Go (Go modules)
+  - package-ecosystem: "gomod"
+    directory: "/sample-apps/blank-go" # Location of the go.mod file
+    schedule:
+      interval: "weekly" # Check for updates weekly
+
+  # Python (pip)
+  - package-ecosystem: "pip"
+    directory: "/sample-apps/blank-python" # Location of the requirements.txt file
+    schedule:
+      interval: "weekly" # Check for updates weekly
